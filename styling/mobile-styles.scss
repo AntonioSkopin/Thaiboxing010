@@ -10,7 +10,7 @@ $nav-background: #f5f5f5;
 $nav-font-color: #000;
 $link-hover-color: #2581DC;
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 420px) {
     .desktop-nav {
         display: none;
     }
@@ -20,7 +20,7 @@ $link-hover-color: #2581DC;
         width: 100vw;
         // Logo and branding
         .brand {
-            height: 8vh;
+            height: 9vh;
             display: flex;
             align-items: center;
             img {
@@ -81,7 +81,6 @@ $link-hover-color: #2581DC;
             height: $nav-height;
             width: $nav-height;
         }
-        @media only screen and (max-width: 798px) {
             // Hamburger nav visible on mobile only
             .nav-mobile {
             display: block;
@@ -106,12 +105,6 @@ $link-hover-color: #2581DC;
             .nav-dropdown {
             position: static;
             }
-        }
-        @media screen and (min-width: $breakpoint) {
-            .nav-list {
-            display: block !important;
-            }
-        }
         #nav-toggle {
             position: absolute;
             left: 18px;

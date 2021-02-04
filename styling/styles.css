@@ -63,7 +63,7 @@ nav ul li a:hover:before, nav ul li a:hover:after {
   width: 100%;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 420px) {
   .mobile-nav {
     display: none;
   }
