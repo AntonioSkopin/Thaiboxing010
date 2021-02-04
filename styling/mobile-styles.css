@@ -1,4 +1,4 @@
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 420px) {
   .desktop-nav {
     display: none;
   }
@@ -9,7 +9,7 @@
     /* Mobile navigation */
   }
   .mobile-nav .brand {
-    height: 8vh;
+    height: 9vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,9 +66,6 @@
     height: 70px;
     width: 70px;
   }
-}
-
-@media only screen and (max-width: 376px) and (max-width: 798px) {
   .mobile-nav .nav-mobile {
     display: block;
   }
@@ -92,15 +89,6 @@
   .mobile-nav .nav-dropdown {
     position: static;
   }
-}
-
-@media only screen and (max-width: 376px) and (min-width: 799px) {
-  .mobile-nav .nav-list {
-    display: block !important;
-  }
-}
-
-@media only screen and (max-width: 376px) {
   .mobile-nav #nav-toggle {
     position: absolute;
     left: 18px;
