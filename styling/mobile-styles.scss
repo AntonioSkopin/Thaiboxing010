@@ -42,6 +42,10 @@ $link-hover-color: #2581DC;
             li {
                 float: left;
                 position: relative;
+                text-decoration: none;
+                font-family: $paragraph-font;
+                font-weight: 600;
+                color: #000;
                 a,
                 a:visited {
                 display: block;
@@ -146,8 +150,12 @@ $link-hover-color: #2581DC;
         }
     }
     .landing-page-container {
+        height: 100vh;
         .landing-page-title {
             width: 100vw;
+            height: 100%;
+            display: flex;
+            justify-content: center;
             img, h2 {
                 width: 80vw !important;
             }

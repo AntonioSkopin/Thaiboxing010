@@ -33,6 +33,10 @@
   .mobile-nav nav ul li {
     float: left;
     position: relative;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #000;
   }
   .mobile-nav nav ul li a,
   .mobile-nav nav ul li a:visited {
@@ -130,8 +134,18 @@
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
+  .landing-page-container {
+    height: 100vh;
+  }
   .landing-page-container .landing-page-title {
     width: 100vw;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .landing-page-container .landing-page-title img, .landing-page-container .landing-page-title h2 {
     width: 80vw !important;
