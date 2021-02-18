@@ -4,20 +4,20 @@
   scroll-behavior: smooth;
 }
 
-.shadow {
+.desktop-version .shadow {
   -webkit-box-shadow: 0 5px 15px #c2c2c2;
           box-shadow: 0 5px 15px #c2c2c2;
 }
 
-.nav-title-visible {
+.desktop-version .nav-title-visible {
   height: 5vh;
 }
 
-.nav-title {
+.desktop-version .nav-title {
   display: none;
 }
 
-.desktop-nav {
+.desktop-version .desktop-nav {
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
@@ -28,7 +28,7 @@
   z-index: 99;
 }
 
-.desktop-nav ul {
+.desktop-version .desktop-nav ul {
   margin-left: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,12 +38,12 @@
           align-items: center;
 }
 
-.desktop-nav ul li {
+.desktop-version .desktop-nav ul li {
   margin: 1rem;
   list-style: none;
 }
 
-.desktop-nav ul li a {
+.desktop-version .desktop-nav ul li a {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
@@ -55,7 +55,7 @@
   position: relative;
 }
 
-.desktop-nav ul li a:before, .desktop-nav ul li a:after {
+.desktop-version .desktop-nav ul li a:before, .desktop-version .desktop-nav ul li a:after {
   content: "";
   position: absolute;
   width: 0;
@@ -65,27 +65,27 @@
   transition: width 0.3s ease-in-out;
 }
 
-.desktop-nav ul li a:before {
+.desktop-version .desktop-nav ul li a:before {
   top: -4px;
   left: 0;
 }
 
-.desktop-nav ul li a:after {
+.desktop-version .desktop-nav ul li a:after {
   bottom: -4px;
   right: 0;
 }
 
-.desktop-nav ul li a:hover:before, .desktop-nav ul li a:hover:after {
+.desktop-version .desktop-nav ul li a:hover:before, .desktop-version .desktop-nav ul li a:hover:after {
   width: 100%;
 }
 
 @media screen and (min-width: 420px) {
-  .mobile-nav {
+  .desktop-version .mobile-nav {
     display: none;
   }
 }
 
-header {
+.desktop-version header {
   width: 80vw;
   height: 90vh;
   margin: 0 auto;
@@ -98,7 +98,7 @@ header {
   position: relative;
 }
 
-header .landing-page-container {
+.desktop-version header .landing-page-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +112,7 @@ header .landing-page-container {
   margin-bottom: 3rem;
 }
 
-header .landing-page-container .landing-page-title {
+.desktop-version header .landing-page-container .landing-page-title {
   width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,18 +123,18 @@ header .landing-page-container .landing-page-title {
           flex-direction: column;
 }
 
-header .landing-page-container .landing-page-title img {
+.desktop-version header .landing-page-container .landing-page-title img {
   width: 35vw;
 }
 
-header .landing-page-container .landing-page-title h2 {
+.desktop-version header .landing-page-container .landing-page-title h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
 
-header .landing-page-container .landing-page-title a {
+.desktop-version header .landing-page-container .landing-page-title a {
   margin-left: 1rem;
   font-family: "Work Sans", sans-serif;
   text-align: center;
@@ -153,19 +153,19 @@ header .landing-page-container .landing-page-title a {
           transform: scale(1);
 }
 
-header .landing-page-container .landing-page-title a:hover {
+.desktop-version header .landing-page-container .landing-page-title a:hover {
   -webkit-transform: scale(1.05) perspective(1px);
           transform: scale(1.05) perspective(1px);
   -webkit-box-shadow: 0px 12px 30px #298a6ad0;
           box-shadow: 0px 12px 30px #298a6ad0;
 }
 
-header .landing-page-container .landing-page-video iframe {
+.desktop-version header .landing-page-container .landing-page-video iframe {
   -webkit-box-shadow: 0px 8px 30px #298a6a7e;
           box-shadow: 0px 8px 30px #298a6a7e;
 }
 
-header .landing-page-container .lees-meer {
+.desktop-version header .landing-page-container .lees-meer {
   text-decoration: none;
   color: #000;
   text-align: center;
@@ -177,7 +177,7 @@ header .landing-page-container .lees-meer {
   -webkit-animation: bounce 1s infinite alternate;
 }
 
-header .landing-page-container .lees-meer i {
+.desktop-version header .landing-page-container .lees-meer i {
   color: #298A6A;
 }
 
@@ -203,7 +203,7 @@ header .landing-page-container .lees-meer i {
   }
 }
 
-#over-ons {
+.desktop-version #over-ons {
   width: 80vw;
   height: 120vh;
   margin: 0 auto;
@@ -216,7 +216,7 @@ header .landing-page-container .lees-meer i {
           flex-direction: column;
 }
 
-#over-ons .over-ons-container {
+.desktop-version #over-ons .over-ons-container {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -231,32 +231,32 @@ header .landing-page-container .lees-meer i {
   margin: 2.5rem 0;
 }
 
-#over-ons .over-ons-container .over-ons-text-container h1 {
+.desktop-version #over-ons .over-ons-container .over-ons-text-container h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 5rem;
 }
 
-#over-ons .over-ons-container .over-ons-text-container span {
+.desktop-version #over-ons .over-ons-container .over-ons-text-container span {
   color: #298A6A;
 }
 
-#over-ons .over-ons-container .over-ons-text-container p {
+.desktop-version #over-ons .over-ons-container .over-ons-text-container p {
   font-family: "Work Sans", sans-serif;
   max-width: 40vw;
 }
 
-#over-ons .over-ons-container .over-ons-img-container img {
+.desktop-version #over-ons .over-ons-container .over-ons-img-container img {
   width: 35vw;
   -webkit-box-shadow: 0px 8px 30px #298a6a7e;
           box-shadow: 0px 8px 30px #298a6a7e;
 }
 
-#over-ons .over-ons-container .over-ons-img-container .sabri-img {
+.desktop-version #over-ons .over-ons-container .over-ons-img-container .sabri-img {
   height: 50vh;
   width: 25vw;
 }
 
-#sporten {
+.desktop-version #sporten {
   width: 80vw;
   height: 160vh;
   margin: 0 auto;
@@ -269,7 +269,7 @@ header .landing-page-container .lees-meer i {
   padding-top: 10rem;
 }
 
-#sporten .sport-container {
+.desktop-version #sporten .sport-container {
   width: 80vw;
   height: 100%;
   display: -webkit-box;
@@ -284,29 +284,29 @@ header .landing-page-container .lees-meer i {
   margin: 5rem 0;
 }
 
-#sporten .sport-container .sport-text-content h1 {
+.desktop-version #sporten .sport-container .sport-text-content h1 {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
 }
 
-#sporten .sport-container .sport-text-content p {
+.desktop-version #sporten .sport-container .sport-text-content p {
   font-family: "Work Sans", sans-serif;
   width: 40vw;
 }
 
-#sporten .sport-container .sport-images-content img {
+.desktop-version #sporten .sport-container .sport-images-content img {
   width: 30vw;
   -webkit-box-shadow: 0px 8px 30px #298a6a7e;
           box-shadow: 0px 8px 30px #298a6a7e;
 }
 
-#sporten hr {
+.desktop-version #sporten hr {
   background-color: #298A6A;
   height: 2px;
   border: 0;
 }
 
-#rooster-tarieven {
+.desktop-version #rooster-tarieven {
   width: 80vw;
   height: 140vh;
   margin: 0 auto;
@@ -321,11 +321,11 @@ header .landing-page-container .lees-meer i {
           justify-content: space-between;
 }
 
-#rooster-tarieven .tarieven-container img {
+.desktop-version #rooster-tarieven .tarieven-container img {
   width: 35vw;
 }
 
-#reviews {
+.desktop-version #reviews {
   width: 80vw;
   height: 50vh;
   margin: 0 auto;
@@ -340,7 +340,7 @@ header .landing-page-container .lees-meer i {
           justify-content: space-between;
 }
 
-#reviews .reviews-container {
+.desktop-version #reviews .reviews-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +350,7 @@ header .landing-page-container .lees-meer i {
           justify-content: space-between;
 }
 
-#reviews .reviews-container .review {
+.desktop-version #reviews .reviews-container .review {
   width: 20vw;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -368,29 +368,29 @@ header .landing-page-container .lees-meer i {
           flex-direction: column;
 }
 
-#reviews .reviews-container .review h1 {
+.desktop-version #reviews .reviews-container .review h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-#reviews .reviews-container .review p {
+.desktop-version #reviews .reviews-container .review p {
   padding: 1rem 0;
 }
 
-#reviews .reviews-container .review p, #reviews .reviews-container .review small {
+.desktop-version #reviews .reviews-container .review p, .desktop-version #reviews .reviews-container .review small {
   font-family: "Work Sans", sans-serif;
 }
 
-#reviews .reviews-container .review small {
+.desktop-version #reviews .reviews-container .review small {
   color: #adadad;
 }
 
-#reviews .reviews-container .review img {
+.desktop-version #reviews .reviews-container .review img {
   padding-top: 1rem;
   height: 4vh;
   width: 10vw;
 }
 
-#contact {
+.desktop-version #contact {
   width: 80vw;
   height: 80vh;
   margin: 0 auto;
@@ -405,7 +405,7 @@ header .landing-page-container .lees-meer i {
           justify-content: center;
 }
 
-#contact .contact-container {
+.desktop-version #contact .contact-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,21 +418,21 @@ header .landing-page-container .lees-meer i {
           align-items: center;
 }
 
-#contact .contact-container .contact-info h1 {
+.desktop-version #contact .contact-container .contact-info h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
 }
 
-#contact .contact-container .contact-info p, #contact .contact-container .contact-info small {
+.desktop-version #contact .contact-container .contact-info p, .desktop-version #contact .contact-container .contact-info small {
   font-family: "Work Sans", sans-serif;
 }
 
-#contact .contact-container .contact-info p {
+.desktop-version #contact .contact-container .contact-info p {
   font-size: 1.25rem;
   padding: 0.5rem 0;
 }
 
-footer {
+.desktop-version #footer {
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -446,7 +446,7 @@ footer {
           justify-content: center;
 }
 
-footer .footer-container {
+.desktop-version #footer .footer-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,12 +464,12 @@ footer .footer-container {
   padding: 2.5rem 0;
 }
 
-footer .footer-container p {
+.desktop-version #footer .footer-container p {
   color: #fff;
   font-family: "Work Sans", sans-serif;
 }
 
-footer .footer-container .footer-content {
+.desktop-version #footer .footer-container .footer-content {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,46 +479,46 @@ footer .footer-container .footer-content {
           justify-content: space-between;
 }
 
-footer .footer-container .footer-content h2 {
+.desktop-version #footer .footer-container .footer-content h2 {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 28px;
   font-weight: lighter;
 }
 
-footer .footer-container .footer-content .social-container ul {
+.desktop-version #footer .footer-container .footer-content .social-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .footer-container .footer-content .social-container ul li {
+.desktop-version #footer .footer-container .footer-content .social-container ul li {
   list-style: none;
   padding-right: 1rem;
   padding-top: 1rem;
 }
 
-footer .footer-container .footer-content .social-container ul li a i {
+.desktop-version #footer .footer-container .footer-content .social-container ul li a i {
   color: #fff;
   font-size: 30px;
 }
 
-footer .footer-container .footer-content .menu-container ul li {
+.desktop-version #footer .footer-container .footer-content .menu-container ul li {
   list-style: none;
   padding: 0.5rem 0;
 }
 
-footer .footer-container .footer-content .menu-container ul li a {
+.desktop-version #footer .footer-container .footer-content .menu-container ul li a {
   color: #fff;
   font-family: "Work Sans", sans-serif;
   text-decoration: none;
 }
 
-footer .footer-container .footer-content .menu-container ul li a:hover {
+.desktop-version #footer .footer-container .footer-content .menu-container ul li a:hover {
   text-decoration: underline;
 }
 
-footer .footer-container hr {
+.desktop-version #footer .footer-container hr {
   width: 80%;
   background-color: #fff;
   height: 2px;

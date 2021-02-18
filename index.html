@@ -15,49 +15,243 @@
 </head>
 
 <body>
-    <nav class="mobile-nav">
-        <div class="nav-container">
-            <div class="brand">
-                <img src="./assets/tb010_logo.png" alt="">
+    <div class="mobile-version">
+        <nav class="mobile-nav">
+            <div class="nav-container">
+                <div class="brand">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./assets/tb010_logo.png" alt="">
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#mobile-over-ons">Over ons</a></li>
+                        <li><a href="#mobile-sporten">Sporten</a></li>
+                        <li><a href="#mobile-rooster-tarieven">Tarieven</a></li>
+                        <li><a href="#mobile-contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Sporten</a></li>
-                    <li><a href="#">Tarieven</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <script>
-            (function ($) { // Begin jQuery
-                $(function () { // DOM ready
-                    // If a link has a dropdown, add sub menu toggle.
-                    $('nav ul li a:not(:only-child)').click(function (e) {
-                        $(this).siblings('.nav-dropdown').toggle();
-                        // Close one dropdown when selecting another
-                        $('.nav-dropdown').not($(this).siblings()).hide();
-                        e.stopPropagation();
-                    });
-                    // Clicking away from dropdown will remove the dropdown class
-                    $('html').click(function () {
-                        $('.nav-dropdown').hide();
-                    });
-                    // Toggle open and close nav styles on click
-                    $('#nav-toggle').click(function () {
-                        $('nav ul').slideToggle();
-                    });
-                    // Hamburger to X toggle
-                    $('#nav-toggle').on('click', function () {
-                        this.classList.toggle('active');
-                    });
-                }); // end DOM ready
-            })(jQuery); // end jQuery
-        </script>
-    </nav>
+            <script>
+                (function ($) { // Begin jQuery
+                    $(function () { // DOM ready
+                        // If a link has a dropdown, add sub menu toggle.
+                        $('nav ul li a:not(:only-child)').click(function (e) {
+                            $(this).siblings('.nav-dropdown').toggle();
+                            // Close one dropdown when selecting another
+                            $('.nav-dropdown').not($(this).siblings()).hide();
+                            e.stopPropagation();
+                        });
+                        // Clicking away from dropdown will remove the dropdown class
+                        $('html').click(function () {
+                            $('.nav-dropdown').hide();
+                        });
+                        // Toggle open and close nav styles on click
+                        $('#nav-toggle').click(function () {
+                            $('nav ul').slideToggle();
+                        });
+                        // Hamburger to X toggle
+                        $('#nav-toggle').on('click', function () {
+                            this.classList.toggle('active');
+                        });
+                    }); // end DOM ready
+                })(jQuery); // end jQuery
+            </script>
+        </nav>
 
+        <div class="mobile-landing-page">
+            <div class="mobile-landing-page-title">
+                <img src="./assets/tb010_logo.png" alt="tb010 logo">
+                <p class="slogan">The only way is up!</p>
+                <br><br>
+                <a class="view-rooster-btn" href="#mobile-rooster-tarieven">Bekijk ons les rooster</a>
+            </div>
+            <a href="#mobile-over-ons" class="lees-meer">
+                Lees meer<br>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+
+        <section id="mobile-over-ons">
+            <div class="mobile-over-ons-container">
+                <div class="over-ons-text-container">
+                    <h1>Over <span>ons</span></h1>
+                    <br>
+                    <p>
+                        Thaiboxing010 is een sportschool dat staat voor discipline, hard werken, ambities en een
+                        ongeëvenaard verlangen opwekken voor het behalen van je doelen. De sportschool is er voor zowel
+                        jong
+                        als oud. De sportschool is in 2015 opgericht door Juve. Juve staat voor hard werken, discipline,
+                        doorzettingsvermogen en loyaliteit. Sabri was in zijn ogen degene die met dezelfde missie en
+                        visie
+                        Thaiboxing010 kon overnemen. Na de geboorte van zijn zoon, Heeft Juve Thaiboxing010 overgedragen
+                        aan
+                        Sabri. Juve had er alle vertrouwen in dat Sabri de sportschool verder zou kunnen ontwikkelen tot
+                        een
+                        grote succesvolle sportschool voor jong en oud.
+                    </p>
+                    <img src="./assets/groepfoto.jpg" alt="">
+                </div>
+                <br><br>
+                <div class="over-ons-text-container">
+                    <h1>De <span>trainer</span></h1>
+                    <br>
+                    <p>
+                        ‘Trainen is zweten, werken en discipline. Trainer zijn is meer dan dat. Ik wil ervoor zorgen
+                        dat
+                        mijn leerlingen de beste versie van zichzelf worden, en zich blijven ontwikkelen. Tevens vind ik
+                        het
+                        belangrijk dat mijn leerlingen gezond blijven en hen laten ervaren hoeveel plezier ik heb in het
+                        geven van trainingen. ‘Het overbrengen van dit gevoel op mijn leerlingen vind ik uiterst
+                        belangrijk.’ – Sabri Boudarra
+                    </p>
+                    <img src="./assets/sabri.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile-sporten">
+            <div class="mobile-sporten-container">
+                <div class="sport-container">
+                    <h1>Kickboksen</h1>
+                    <br>
+                    <p>
+                        Is slechts een proeftekst uit het drukkerij- en zetterijwezen.
+                        Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds
+                        de 16e eeuw, toen een onbekende drukker een zethaak met letters
+                        nam en ze door elkaar husselde om een font-catalogus te maken.
+                        Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel
+                        onveranderd.
+                    </p>
+                    <br>
+                    <img src="./assets/groepfoto.jpg" alt="">
+                </div>
+            </div>
+            <div class="mobile-sporten-container">
+                <div class="sport-container">
+                    <h1>Ladies only</h1>
+                    <br>
+                    <p>
+                        Is slechts een proeftekst uit het drukkerij- en zetterijwezen.
+                        Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds
+                        de 16e eeuw, toen een onbekende drukker een zethaak met letters
+                        nam en ze door elkaar husselde om een font-catalogus te maken.
+                        Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel
+                        onveranderd.
+                    </p>
+                    <br>
+                    <img src="./assets/groepfoto.jpg" alt="">
+                </div>
+            </div>
+            <div class="mobile-sporten-container">
+                <div class="sport-container">
+                    <h1>Personal Training</h1>
+                    <br>
+                    <p>
+                        Is slechts een proeftekst uit het drukkerij- en zetterijwezen.
+                        Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds
+                        de 16e eeuw, toen een onbekende drukker een zethaak met letters
+                        nam en ze door elkaar husselde om een font-catalogus te maken.
+                        Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel
+                        onveranderd.
+                    </p>
+                    <br>
+                    <img src="./assets/groepfoto.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile-rooster-tarieven">
+            <div class="mobile-tarieven-container">
+                <h1>Rooster:</h1>
+                <br>
+                <img src="./assets/tarieven.jpg" alt="">
+            </div>
+            <div class="mobile-tarieven-container">
+                <h1>Tarieven:</h1>
+                <br>
+                <img src="./assets/tarieven.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="mobile-reviews">
+            <div class="mobile-reviews-container">
+                <div class="mobile-review">
+                    <h1>Nour Ig zegt:</h1>
+                    <p>Top sportschool! Zeker de moeite waard om een kijkje te nemen en mee te trainen</p>
+                    <small>01/01/2021</small>
+                    <img src="./assets/5-star.png" alt="">
+                </div>
+                <div class="mobile-review">
+                    <h1>Ron van der Wal zegt:</h1>
+                    <p>Altijd pittige intensieve trainingen, heerlijk.</p>
+                    <small>01/01/2021</small>
+                    <img src="./assets/5-star.png" alt="">
+                </div>
+                <div class="mobile-review">
+                    <h1>Ibrahim Zembib zegt:</h1>
+                    <p>Nieuwe sportschool in Nieuwerkerk/Rotterdam Netjes en goed verzorgd, trainer met verstand van
+                        zaken.
+                    </p>
+                    <small>01/01/2021</small>
+                    <img src="./assets/5-star.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile-contact">
+            <div class="mobile-contact-container">
+                <div class="contact-info">
+                    <h1>Heeft u nog vragen?</h1>
+                    <small>We zijn hierop altijd bereikbaar:</small>
+                    <br><br>
+                    <p>Telefoon: <span>0612345678</span></p>
+                    <p>Email: <span>mail@mail.nl</span></p>
+                    <p>Adres: <span>Adres 123</span></p>
+                </div>
+            </div>
+            <div class="maps-info">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe height="200" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Steenbakkerij%2025,%202913%20LB%20Nieuwerkerk%20aan%20den%20IJssel&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="mobile-footer">
+            <div class="mobile-footer-container">
+                <div class="proefles-container">
+                    <h1>Proefles aanvragen</h2>
+                        <br>
+                        <p>Bent u geinteresseerd en wilt u een proefles aanvragen?<br>U kunt ons dan bereiken met de
+                            onderstaande gegevens:<br><br>
+                            Mail naar: info@tb010.nl<br>
+                            Bel naar: 0612345678<br><br>
+                            We horen graag van u!
+                        </p>
+                </div>
+                <div class="social-container">
+                    <h1>Onze social media:</h2>
+                        <br>
+                        <p>U kunt ons ook volgen op de volgende<br>social media platformen:</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/thaiboxing010"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/Thaiboxing-010-320381861896429"><i
+                                        class="fab fa-facebook"></i></a></li>
+                        </ul>
+                </div>
+                <br><br>
+                <hr>
+                <div class="dev-info">
+                    <p>Made by Antonio Skopin - @webdev.antonio</p>
+                </div>
+            </div>
+        </footer>
+    </div>
     <div class="desktop-version">
         <nav id="navbar" class="desktop-nav">
             <ul>
@@ -258,7 +452,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer id="footer">
             <div class="footer-container">
                 <div class="footer-content">
                     <div class="social-container">
