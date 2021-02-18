@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+.mobile-version {
+  display: none;
+}
+
 .desktop-version .shadow {
   -webkit-box-shadow: 0 5px 15px #c2c2c2;
           box-shadow: 0 5px 15px #c2c2c2;

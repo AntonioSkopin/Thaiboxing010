@@ -9,6 +9,10 @@ $img-shadow: 0px 8px 30px #298a6a7e;
     scroll-behavior: smooth;
 }
 
+.mobile-version {
+    display: none;
+}
+
 .desktop-version {
     .shadow {
         box-shadow: 0 5px 15px rgb(194, 194, 194);
