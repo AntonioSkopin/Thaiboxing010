@@ -29,6 +29,7 @@ $link-hover-color: #2581DC;
         display: none;
     }
     .mobile-version {
+        display: block;
         .mobile-nav {
             height: $nav-height;
             background: $nav-background;
