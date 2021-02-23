@@ -205,39 +205,82 @@ $img-shadow: 0px 8px 30px #298a6a7e;
     
     #sporten {
         width: 80vw;
-        height: 160vh;
+        height: max-content;
         margin: 0 auto;
         display: flex;
         align-items: center;
         padding-top: 10rem;
-        .sport-container {
-            width: 80vw;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 5rem 0;
-            .sport-text-content {
+        .sporten-container {
+            width: 100%;
+            .sport {
+                margin: 1rem;
+                position: relative;
+                transition: all 1s ease;
+                transform: scale(1);
+                .overlay {
+                    background-color: rgba(0, 0, 0, 0.65);
+                    width: 100%;
+                    height: 100%;
+                }
                 h1 {
-                    font-size: 3rem;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50%;
+                    top: 50%;
+                    text-align: center;
+                    width: 100%;
                     font-family: $header-font;
+                    font-size: 36px;
                 }
-                p {
+                small {
+                    color: #fff;
+                    position: absolute;
+                    bottom: 30%;
+                    top: 70%;
+                    text-align: center;
+                    width: 100%;
                     font-family: $paragraph-font;
+                }
+                &:hover {
+                    transform: scale(1.05) perspective(1px);
+                }
+            }
+            .top-row {
+                display: flex;
+                justify-content: space-between;
+                .sport {
+                    width: 25vw;
+                    height: 40vh;
+                }
+                .peuter {
+                    background: url("../assets/peuters.jpeg") center center no-repeat;
+                    background-size: cover;
+                }
+                .jeugd {
+                    background: url("../assets/jeugd_groep.jpeg") center center no-repeat;
+                    background-size: cover;
+                }
+                .kickboksles {
+                    background: url("../assets/jongeren.jpeg") center center no-repeat;
+                    background-size: cover;
+                }
+            }
+            .bottom-row {
+                display: flex;
+                justify-content: space-between;
+                .sport {
                     width: 40vw;
+                    height: 50vh;
+                }
+                .wedstrijdgroep {
+                    background: url("../assets/ring_monta.jpeg") no-repeat;
+                    background-size: cover;
+                }
+                .pt {
+                    background: url("../assets/amira_ring.jpeg") center center no-repeat;
+                    background-size: cover;
                 }
             }
-            .sport-images-content {
-                img {
-                    width: 30vw;
-                    box-shadow: $img-shadow;
-                }
-            }
-        }
-        hr {
-            background-color: $primary-color;
-            height: 2px; 
-            border: 0; 
         }
     }
     
