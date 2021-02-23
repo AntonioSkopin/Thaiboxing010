@@ -262,7 +262,9 @@
 
 .desktop-version #sporten {
   width: 80vw;
-  height: 160vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,41 +275,102 @@
   padding-top: 10rem;
 }
 
-.desktop-version #sporten .sport-container {
-  width: 80vw;
+.desktop-version #sporten .sporten-container {
+  width: 100%;
+}
+
+.desktop-version #sporten .sporten-container .sport {
+  margin: 1rem;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.desktop-version #sporten .sporten-container .sport .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
   height: 100%;
+}
+
+.desktop-version #sporten .sporten-container .sport h1 {
+  color: #fff;
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+}
+
+.desktop-version #sporten .sporten-container .sport small {
+  color: #fff;
+  position: absolute;
+  bottom: 30%;
+  top: 70%;
+  text-align: center;
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.desktop-version #sporten .sporten-container .sport:hover {
+  -webkit-transform: scale(1.05) perspective(1px);
+          transform: scale(1.05) perspective(1px);
+}
+
+.desktop-version #sporten .sporten-container .top-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 5rem 0;
 }
 
-.desktop-version #sporten .sport-container .sport-text-content h1 {
-  font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
+.desktop-version #sporten .sporten-container .top-row .sport {
+  width: 25vw;
+  height: 40vh;
 }
 
-.desktop-version #sporten .sport-container .sport-text-content p {
-  font-family: "Work Sans", sans-serif;
+.desktop-version #sporten .sporten-container .top-row .peuter {
+  background: url("../assets/peuters.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+.desktop-version #sporten .sporten-container .top-row .jeugd {
+  background: url("../assets/jeugd_groep.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+.desktop-version #sporten .sporten-container .top-row .kickboksles {
+  background: url("../assets/jongeren.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+.desktop-version #sporten .sporten-container .bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.desktop-version #sporten .sporten-container .bottom-row .sport {
   width: 40vw;
+  height: 50vh;
 }
 
-.desktop-version #sporten .sport-container .sport-images-content img {
-  width: 30vw;
-  -webkit-box-shadow: 0px 8px 30px #298a6a7e;
-          box-shadow: 0px 8px 30px #298a6a7e;
+.desktop-version #sporten .sporten-container .bottom-row .wedstrijdgroep {
+  background: url("../assets/ring_monta.jpeg") no-repeat;
+  background-size: cover;
 }
 
-.desktop-version #sporten hr {
-  background-color: #298A6A;
-  height: 2px;
-  border: 0;
+.desktop-version #sporten .sporten-container .bottom-row .pt {
+  background: url("../assets/amira_ring.jpeg") center center no-repeat;
+  background-size: cover;
 }
 
 .desktop-version #rooster-tarieven {
