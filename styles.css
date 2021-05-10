@@ -2,17 +2,29 @@
     scroll-behavior: smooth !important;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 999;
+.floating-img1 {
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
 }
 
-.landing-page-img {
-    height: 60vh;
+.floating-img2 {
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
 }
 
-.tb-logo {
-    width: 25vw;
+.floating-img3 {
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
