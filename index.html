@@ -67,11 +67,11 @@
     <div class="middle stagger">
       <ul class="secondary">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Over ons</a></li>
-        <li><a href="#">Sporten</a></li>
-        <li><a href="#">Rooster</a></li>
-        <li><a href="#">Tarieven</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#over-ons">Over ons</a></li>
+        <li><a href="#sporten">Sporten</a></li>
+        <li><a href="#rooster">Rooster</a></li>
+        <li><a href="#tarieven">Tarieven</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="right stagger">
@@ -84,6 +84,7 @@
   </div>
   <!-- Desktop nav -->
 
+  <!-- Mobile nav -->
   <div class="sm:hidden">
     <nav id="navbar" class="flex items-center justify-between flex-wrap py-6 fixed w-full top-0"
     style="z-index: 999; padding-right: 5vw; padding-left: 5vw;" x-data="{ isOpen: false }"
@@ -136,9 +137,10 @@
     </div>
   </nav>
   </div>
+  <!-- Mobile nav -->
 
   <!-- Landing Page -->
-  <div class="landing-page-container green-bg w-screen h-screen flex items-center pl-24 relative">
+  <div class="landing-page-container green-bg w-screen h-screen flex items-center px-8 sm:pl-24 relative">
     <div class="landing-page-text flex flex-col">
       <span data-aos="fade-up" data-aos-duration="1100" class="sub-header">
         <svg class="rocket-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
@@ -149,12 +151,12 @@
         </svg>
         <p>Boost je zelfvertrouwen</p>
       </span>
-      <h1 data-aos="fade-up" data-aos-duration="1300" class="header">
+      <h1 data-aos="fade-up" data-aos-duration="1300" class="header text-3xl md:text-4xl lg:text-6xl">
         Thaiboxing 010,
         <br>
         Meer dan een gym.
       </h1>
-      <p data-aos="fade-up" data-aos-duration="1500" class="content">
+      <p data-aos="fade-up" data-aos-duration="1500" class=" md:w-2/5 content">
         Thaiboxing010 is een sportschool dat staat voor discipline,
         hard werken, ambities en een ongeëvenaard verlangen
         opwekken voor het behalen van je doelen.
@@ -169,7 +171,7 @@
   <!-- Landing Page -->
 
   <!-- Over ons -->
-  <section id="over-ons" class="text-gray-600 body-font pt-64 md:pt-0 green-bg">
+  <section id="over-ons" class="text-gray-600 body-font green-bg">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex flex-wrap w-full mb-20">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
