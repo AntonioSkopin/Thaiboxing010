@@ -2,6 +2,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.green-gradient-cta {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-40%, #298A6A), to(#0de49c));
+  background-image: linear-gradient(to bottom, #298A6A -40%, #0de49c);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.75rem 2.25rem;
+  margin-top: 2rem;
+  border-radius: 2rem 2rem 2rem 0rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.green-bg {
+  background-color: #F2FFFB;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -10,17 +28,142 @@ header {
   background-color: #F2FFFB;
 }
 
-header img {
-  width: 15vw;
-}
-
-header svg {
-  font-size: 2rem;
+.menu-icon {
+  font-size: 3.5rem;
   color: #05241A;
+  background-color: #fff;
+  padding: 0.8rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -50px;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
-.landing-page-container {
-  background-color: #F2FFFB;
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% auto 6em;
+      grid-template-columns: 75% auto 6em;
+  opacity: 0;
+  -webkit-transform: translateX(10%) scale(0.9);
+          transform: translateX(10%) scale(0.9);
+  pointer-events: none;
+  z-index: 999;
+}
+
+.left,
+.right,
+.middle {
+  height: 100vh;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+  opacity: 0;
+}
+
+img {
+  width: 20vw;
+  margin: 0;
+}
+
+.left {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 6rem;
+}
+
+.left p.subhead {
+  color: #05241A;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: .5em;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.cards .card {
+  padding: 2em;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1em 1em 1em 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards .card strong {
+  color: #000;
+}
+
+.cards .card p {
+  color: #393241;
+}
+
+.cards .card:nth-of-type(2) {
+  margin-left: 2em;
+}
+
+.middle {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle a {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #05241A;
+  padding: .4em 0;
+  display: block;
+  font-weight: 600;
+}
+
+.right {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  background-color: #298A6A;
+}
+
+.exit {
+  margin-top: 1.2em;
+  cursor: pointer;
 }
 
 .landing-page-container .landing-page-text .sub-header {
@@ -56,22 +199,8 @@ header svg {
   line-height: 1.8;
 }
 
-.landing-page-container .landing-page-text .cta {
-  color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-40%, #298A6A), to(#0de49c));
-  background-image: linear-gradient(to bottom, #298A6A -40%, #0de49c);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0.75rem 2.25rem;
-  margin-top: 2rem;
-  border-radius: 2rem 2rem 2rem 0rem;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 .landing-page-container .landing-page-img img {
-  z-index: 999;
+  z-index: 998;
   width: 37.5rem;
   height: 37.5rem;
   border-radius: 0rem 20rem 20rem 0rem;
