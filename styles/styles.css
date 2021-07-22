@@ -189,13 +189,11 @@ img {
 .landing-page-container .landing-page-text .header {
   font-weight: 900;
   color: #05241A;
-  font-size: 3.75rem;
   padding: 1rem 0;
 }
 
 .landing-page-container .landing-page-text .content {
   color: #8A8A8A;
-  width: 35vw;
   line-height: 1.8;
 }
 
