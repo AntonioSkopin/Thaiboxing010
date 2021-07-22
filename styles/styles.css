@@ -1,0 +1,91 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #F2FFFB;
+}
+
+header img {
+  width: 15vw;
+}
+
+header svg {
+  font-size: 2rem;
+  color: #05241A;
+}
+
+.landing-page-container {
+  background-color: #F2FFFB;
+}
+
+.landing-page-container .landing-page-text .sub-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  color: #298A6A;
+  font-weight: 500;
+}
+
+.landing-page-container .landing-page-text .sub-header p {
+  padding-left: 1rem;
+}
+
+.landing-page-container .landing-page-text .sub-header .rocket-icon {
+  font-size: 1.5rem;
+}
+
+.landing-page-container .landing-page-text .header {
+  font-weight: 900;
+  color: #05241A;
+  font-size: 3.75rem;
+  padding: 1rem 0;
+}
+
+.landing-page-container .landing-page-text .content {
+  color: #8A8A8A;
+  width: 35vw;
+  line-height: 1.8;
+}
+
+.landing-page-container .landing-page-text .cta {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-40%, #298A6A), to(#0de49c));
+  background-image: linear-gradient(to bottom, #298A6A -40%, #0de49c);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.75rem 2.25rem;
+  margin-top: 2rem;
+  border-radius: 2rem 2rem 2rem 0rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.landing-page-container .landing-page-img img {
+  z-index: 999;
+  width: 37.5rem;
+  height: 37.5rem;
+  border-radius: 0rem 20rem 20rem 0rem;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.landing-page-container .landing-page-img .circle {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#298A6A), to(#0de49c));
+  background-image: linear-gradient(to bottom, #298A6A, #0de49c);
+  width: 37.5rem;
+  height: 37.5rem;
+  border-radius: 20rem 20rem 0 20rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/*# sourceMappingURL=styles.css.map */
