@@ -86,7 +86,7 @@
 
   <!-- Mobile nav -->
   <div class="sm:hidden">
-    <nav id="navbar" class="flex items-center justify-between flex-wrap py-6 fixed w-full top-0"
+    <nav id="navbar" class="flex glass-bg items-center justify-between flex-wrap py-6 fixed w-full top-0"
     style="z-index: 999; padding-right: 5vw; padding-left: 5vw;" x-data="{ isOpen: false }"
     @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-white' : isOpen , 'bg-none' : !isOpen}">
     <!--Logo etc-->
@@ -271,8 +271,8 @@
         </p>
       </div>
       <div class="flex flex-wrap -m-4">
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="xl:w-1/3 md:w-1/2 w-full p-4">
+          <div class="bg-gray-200 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/peuters.jpeg"
               alt="content" />
             <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -283,8 +283,8 @@
             </h2>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="xl:w-1/3 md:w-1/2 w-full p-4">
+          <div class="bg-gray-200 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/jeugd_groep.jpeg"
               alt="content" />
             <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -295,8 +295,8 @@
             </h2>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="xl:w-1/3 md:w-1/2 w-full p-4">
+          <div class="bg-gray-200 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/jongeren.jpeg"
               alt="content" />
             <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -307,8 +307,8 @@
             </h2>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="xl:w-1/3 md:w-1/2 w-full p-4">
+          <div class="bg-gray-200 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/kai_win.jpeg"
               alt="content" />
             <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -319,8 +319,8 @@
             </h2>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="xl:w-1/3 md:w-1/2 w-full p-4">
+          <div class="bg-gray-200 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/ladies.jpeg" alt="content" />
             <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">
               VANAF 13 JAAR
@@ -330,8 +330,8 @@
             </h2>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="xl:w-1/3 md:w-1/2 w-full p-4">
+          <div class="bg-gray-200 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/pt.jpeg" alt="content" />
             <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">
               VOOR ALLE LEEFTIJDEN
@@ -349,19 +349,19 @@
   <!-- Tarieven -->
   <section id="tarieven" class="text-gray-600 body-font green-bg">
     <div class="container px-5 py-0 lg:py-24 mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
-      <div class="w-full overflow-auto">
+      <div class="w-full overflow-auto my-8 md:my-0">
         <h1 class="text-xl">Abbonementen:</h1>
         <table class="table-auto w-full text-left whitespace-no-wrap">
           <thead>
             <tr>
               <th
-                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">
                 Groep</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Leeftijd</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Lessen</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Prijs p/m</th>
             </tr>
           </thead>
@@ -399,19 +399,19 @@
           </tbody>
         </table>
       </div>
-      <div class="w-full overflow-auto">
+      <div class="w-full overflow-auto my-8 md:my-0">
         <h1 class="text-xl">Personal Training:</h1>
         <table class="table-auto w-full text-left whitespace-no-wrap">
           <thead>
             <tr>
               <th
-                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">
                 Groep</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Leeftijd</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Lessen</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Prijs p/m</th>
             </tr>
           </thead>
@@ -443,19 +443,19 @@
           </tbody>
         </table>
       </div>
-      <div class="w-full overflow-auto">
+      <div class="w-full overflow-auto my-8 md:my-0">
         <h1 class="text-xl">Rittenkaarten:</h1>
         <table class="table-auto w-full text-left whitespace-no-wrap">
           <thead>
             <tr>
               <th
-                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">
                 Groep</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Leeftijd</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Lessen</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Prijs p/m</th>
             </tr>
           </thead>
@@ -481,19 +481,19 @@
           </tbody>
         </table>
       </div>
-      <div class="w-full overflow-auto">
+      <div class="w-full overflow-auto my-8 md:my-0">
         <h1 class="text-xl">Losse lessen:</h1>
         <table class="table-auto w-full text-left whitespace-no-wrap">
           <thead>
             <tr>
               <th
-                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">
                 Groep</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Leeftijd</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Lessen</th>
-              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
                 Prijs p/m</th>
             </tr>
           </thead>
@@ -524,8 +524,8 @@
   <!-- Tarieven -->
 
   <!-- Rooster -->
-  <section class="rooster block lg:hidden py-24 green-bg">
-    <img src="./assets/updates_rooster.jpeg" alt="">
+  <section class="rooster flex justify-center lg:hidden py-24 green-bg">
+    <img src="./assets/updates_rooster.jpeg" alt="" class="w-5/6">
   </section>
   <section id="rooster" class="hidden lg:block text-gray-600 body-font green-bg">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
@@ -780,7 +780,7 @@
       </div>
       <div class="flex flex-wrap -m-4">
         <div class="p-4 md:w-1/3 w-full">
-          <div class="bg-gray-100 p-8 rounded">
+          <div class="bg-gray-200 p-8 rounded">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
               viewBox="0 0 975.036 975.036">
               <path
@@ -799,7 +799,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/3 w-full">
-          <div class="bg-gray-100 p-8 rounded">
+          <div class="bg-gray-200 p-8 rounded">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
               viewBox="0 0 975.036 975.036">
               <path
@@ -817,7 +817,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/3 w-full">
-          <div class="h-full bg-gray-100 p-8 rounded">
+          <div class="h-full bg-gray-200 p-8 rounded">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
               viewBox="0 0 975.036 975.036">
               <path
@@ -876,7 +876,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 md:w-1/3 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <div class="lg:w-1/3 md:w-1/3 green-bg flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
         <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
           Nog vragen?
         </h2>
